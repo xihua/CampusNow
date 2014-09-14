@@ -1,82 +1,318 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Campusnow by xihua</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<head>
+<title>Campus Now-校园轻社交</title>
 
-  </head>
-  <body>
+<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.useso.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
-      <header>
-        <h1>Campusnow</h1>
-        <p></p>
-      </header>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+	 	<!---strat-slider---->
+	    <link rel="stylesheet" type="text/css" href="./css/slider.css" />
+		<script type="text/javascript" src="./js/modernizr.custom.28468.js"></script>
+		<script type="text/javascript" src="./js/jquery.cslider.js"></script>
+			<script type="text/javascript">
+				$(function() {
+				
+					$('#da-slider').cslider({
+						autoplay	: true,
+						bgincrement	: 450
+					});
+				
+				});
+			</script>
+		<!---//strat-slider---->
+		 <!-- scroll -->
+		 <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <!-- //scroll -->
 
-      <div id="banner">
-        <span id="logo"></span>
+</head>
+<body>
+	<!-- start slider -->
+<div class="slider_bg">
+			<!-- start header -->
+	<div class="wrap">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html"><img src="./images/logo.png" alt=""/></a>
+				</div>
+		<!-- start top-nav-->
+		<div class="h_right">
+			<ul class="menu">		
+				<li class="active"><a  href="#home">主页</a></li>
+				<!--<li><a href="http://t.campusnow.cn" target="_blank" >话题</a></li>-->
+				<li><a href="#portfolio" class="scroll">介绍</a></li>
+				<li><a href="#about" class="scroll">关于</a></li>
+				<li class="last"><a href="#contact"  class="scroll">联系我们</a></li>
+			</ul>			
+			<!-- start smart_nav * -->
+	        <nav class="nav">
+	            <ul class="nav-list">
+	                <li class="nav-item"><a  href="#home">主页</a></li>
+	                <!--<li class="nav-item"><a href="http://t.campusnow.cn" target="_blank" >话题</a></li>-->
+	                <li class="nav-item"><a href="#portfolio" class="scroll">介绍</a></li>	            
+	                <li class="nav-item"><a href="#about" class="scroll">关于</a></li>
+	                <li class="nav-item"><a href="#contact"  class="scroll">联系我们</a></li>
+	                <div class="clear"></div>
+	            </ul>
+	        </nav>
+	        <script type="text/javascript" src="./js/responsive.menu.js"></script>
+			<!-- end smart_nav * -->
+		</div>
+		<div class="clear"></div>
 
-        <a href="https://github.com/xihua/CampusNow" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/xihua/CampusNow/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/xihua/CampusNow/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
+			</div>
+			</div>
+			<!---//End-header--->
+<!-- start main -->
+				<!---start-da-slider----->
+				<div id="da-slider" class="da-slider">
+				<div class="da-slide">
+					<p>CampusNow</p>
+					<h2>校园轻社交</h2>
+					<p class="a"><a href="http://t.campusnow.cn" target="_blank">因你而共鸣</a></p>
+				</div>
+				<div class="da-slide">
+					<p>Campus Now</p>
+					<h2>正在公测中</h2>
+					<p class="a"><a href="./download/CampusNow.apk">现在下载</a></p>
+				</div>
+				<div class="da-slide">
+					<p>话题产生器</p>
+					<h2>Topic of CampusNow</h2>
+					<p class="a"><a href="http://t.campusnow.cn" target="_blank">点击进入</a></p>
+				</div>
+				<nav class="da-arrows">
+					<span class="da-arrows-prev"></span>
+					<span class="da-arrows-next"></span>
+				</nav>
+			</div>
+ 			<!---//End-da-slider----->
+ 		</div>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+ 		<div class="portfolio" id="portfolio">
+		  	<div class="wrap">
+		  		<h3>介绍</h3>
+		  		<p>校园轻社交.</p>
+			<div class="col_1_of_3 span_1_of_3">
+					  <div class="view view-fourth">
+                        <img src="./images/port1.png">
+	                    <div class="mask">
+	                        <h2>Ebony</h2>
+	                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+	                        <a href="#" class="info">Read More</a>
+	                    </div>
+                	</div>
+					<h4><a href="#">同步课表</a></h4>
+					<p>云同步</p>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					 <div class="view view-fourth">
+                        <img src="./images/port2.jpg">
+	                    <div class="mask">
+	                        <h2>Stationary</h2>
+	                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+	                        <a href="#" class="info">Read More</a>
+	                    </div>
+                	</div>
+					<h4><a href="#">查询成绩</a></h4>
+					<p>及时的学习计划</p>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					 <div class="view view-fourth">
+                        <img src="./images/port5.jpg">
+	                    <div class="mask">
+	                        <h2>Poster</h2>
+	                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+	                        <a href="#" class="info">Read More</a>
+	                    </div>
+                	</div>
+					<h4><a href="#">一键评教</a></h4>
+					<p>动动手指</p>
+				</div>
+			  <div class="col_1_of_3 span_1_of_3">
+					 <div class="view view-fourth">
+                        <img src="./images/port4.jpg">
+	                    <div class="mask">
+	                        <h2>Record</h2>
+	                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+	                        <a href="#" class="info">Read More</a>
+	                    </div>
+                	</div>
+					<h4><a href="#">校园话题</a></h4>
+					<p>我们说不完的青春</p>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					  <div class="view view-fourth">
+                        <img src="./images/port5.png">
+	                    <div class="mask">
+	                        <h2>Design</h2>
+	                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+	                        <a href="#" class="info">Read More</a>
+	                    </div>
+                	</div>
+					<h4><a href="#">?</a></h4>
+					<p>你所期待的</p>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					 <div class="view view-fourth">
+                        <img src="./images/port6.jpg">
+	                    <div class="mask">
+	                        <h2>Branding</h2>
+	                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+	                        <a href="#" class="info">Read More</a>
+	                    </div>
+                	</div>
+					<h4><a href="#">?</a></h4>
+					<p>你所意想不到的</p>
+				</div>
+			<div class="clear"></div>								  						
+			</div>   		 
+   		 </div>
+   		 <!---start-about---->
+		  <div class="about" id="about">
+		  	<div class="wrap">
+		  		<h3>关于</h3>
+		  		<p class="a">一起皆因为我们有一个共同的目标.</p>
+				<!---start-about-time-line---->
+				<div class="about-time-line">
+					<li>
+							<div class="cbp_tmicon img1"> </div>
+							<div class="cbp_tmlabel">
+								<h2>April 2014</h2>
+								<h2>原点</h2>
+								<p>CampusNow的点子闯了进来,<br/>在一次吃饭中跟hp一拍即合.</p>
+							</div>
+					</li>
+					<li>
+							<div class="cbp_tmicon1 img2"> </div>
+							<div class="cbp_tmlabel cbp_tmlabel1">
+								<h2>May 2014</h2>
+								<h2>Begin Coding </h2>
+								<p>
+									设计和功能很早就已经完成了,<br/>
+									我们从Android零开发基础,<br/>
+									边摸索边学习,一点点的趋向我们的目标……
+								</p>
+							</div>
+					</li><br />
+					<li>
+							<div class="cbp_tmicon2 img3"> </div>
+							<div class="cbp_tmlabel">
+								<h2>July 2014</h2>
+								<h2>论坛“话题”上线</h2>
+								<p>
+									“话题”我们直接采用了discourse方案,<br/>
+									并且也出色的满足了我们的需求,<br/>
+									CampusNow的完成,<br/>
+									离不开众多开源项目的支持,感谢！
+								</p>
+							</div>
+					</li>
+					<li>
+							<div class="cbp_tmicon3 img4"> </div>
+							<div class="cbp_tmlabel cbp_tmlabel1">
+								<h2>September 2014</h2>
+								<h2>Beta 公测</h2>
+								<p>经过了一个暑假的赶工,<br/>
+								CampusNow基本功能都已经实现,<br/>
+								我们也按捺不住了,<br/>
+								应用宝率先上线！
+								<a href="http://android.myapp.com/myapp/detail.htm?apkName=com.campusnow" target="_blank">点此查看</a></p>
+							</div>
+					</li>
+					<li>
+							<div class="cbp_tmicon4 img5"> </div>
+					</li>
+					<div class="clear"> </div>
+   		   </div>
+   		 </div>    
+   		</div>
+ 			<!---//end-about---->     
+           <!----start-team-members---->
+				<div class="team-members">
+					<div class="wrap"> 
+						<div class="tm-head">
+							<h3>Campus Now 团队</h3>
+							<p>我们想引起你的共鸣.</p>
+						</div>
+						<div class="tm-head-grids">
+							<div class="tm-head-grid">
+								<img src="./images/team-member1.jpg" alt="" />
+								<h4>皙华</h4>
+								<h5>Designer & Coder</h5>
+								<ul class="top-social-icons">
+									<li><a class="twitter simptip-position-bottom simptip-movable" data-tooltip="twitter" href="#"> </a></li>
+									<li><a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a></li>
+									<li><a class="pin simptip-position-bottom simptip-movable" data-tooltip="pintrest" href="#"> </a></li>
+									<div class="clear"> </div>
+								</ul>
+							</div>
+							<div class="tm-head-grid">
+								<img src="./images/team-member2.jpg" alt="" />
+								<h4>HP</h4>
+								<h5>Coder</h5>
+								<ul class="top-social-icons">
+									<li><a class="twitter simptip-position-bottom simptip-movable" data-tooltip="twitter" href="#"> </a></li>
+									<li><a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a></li>
+									<li><a class="pin simptip-position-bottom simptip-movable" data-tooltip="pintrest" href="#"> </a></li>
+									<div class="clear"> </div>
+								</ul>
+							</div>
+							
+							<div class="clear"> </div>
+						</div>
+						<p class="team-info">We've All Been Here.</p>
+					</div>
+				</div>
+				<!----//End-team-members----> 
+				<!---strat-image-cursuals---->
+                 
+             <div class="contact" id="contact">
+		  	<div class="wrap">
+		  		<h3>联系我们</h3>
+				<div class="form" align="center">
+							<p>邮箱: Now@campusnow.cn</p>
+							 <p>QQ: Now@campusnow.cn</p>
+							 <p>微博: CampusNow</p>
+							 <p>地址: 湖北省宜昌市大学路8号</p>
+						<p class="a">我们想引起你的共鸣.</p>
+						 <div class="clear"> </div>
+						 <input type="submit" value="Join Us">					 
+				 </div>
+   		   </div>
+   		 </div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+ <!-- scroll_top_btn -->
+		<script type="text/javascript" src="./js/move-top.js"></script>
+		<script type="text/javascript" src="./js/easing.js"></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/xihua">xihua</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+</body>
 </html>
