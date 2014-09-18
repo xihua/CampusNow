@@ -9,21 +9,11 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
 <script type="text/javascript" src="./js/jquery.min.js"></script>
 	 	<!---strat-slider---->
 	    <link rel="stylesheet" type="text/css" href="./css/slider.css" />
 		<script type="text/javascript" src="./js/modernizr.custom.28468.js"></script>
-		<script type="text/javascript" src="./js/jquery.cslider.js"></script>
-			<script type="text/javascript">
-				$(function() {
-				
-					$('#da-slider').cslider({
-						autoplay	: true,
-						bgincrement	: 450
-					});
-				
-				});
-			</script>
 		<!---//strat-slider---->
 		 <!-- scroll -->
 		 <script type="text/javascript">
@@ -46,73 +36,24 @@
 </head>
 <body>
 	<!-- start slider -->
-<div class="slider_bg">
-			<!-- start header -->
-	<div class="wrap">
-			<div class="header">
-				<div class="logo">
-					<a href="index.html"><img src="./images/logo.png" alt=""/></a>
-				</div>
-		<!-- start top-nav-->
-		<div class="h_right">
-			<ul class="menu">		
-				<li class="active"><a  href="#home">主页</a></li>
-				<li><a href="./download/CampusNow.apk">下载</a></li>
-				<!--<li><a href="http://t.campusnow.cn" target="_blank" >话题</a></li>-->
-				<li><a href="#portfolio" class="scroll">介绍</a></li>
-				<li><a href="#about" class="scroll">关于</a></li>
-				<li class="last"><a href="#contact"  class="scroll">联系我们</a></li>
-			</ul>			
-			<!-- start smart_nav * -->
-	        <nav class="nav">
-	            <ul class="nav-list">
-	                <li class="nav-item"><a  href="#home">主页</a></li>
-	                <li class="nav-item"><a href="./download/CampusNow.apk">下载</a></li>
-	                <!--<li class="nav-item"><a href="http://t.campusnow.cn" target="_blank" >话题</a></li>-->
-	                <li class="nav-item"><a href="#portfolio" class="scroll">介绍</a></li>	            
-	                <li class="nav-item"><a href="#about" class="scroll">关于</a></li>
-	                <li class="nav-item"><a href="#contact"  class="scroll">联系我们</a></li>
-	                <div class="clear"></div>
-	            </ul>
-	        </nav>
-	        <script type="text/javascript" src="./js/responsive.menu.js"></script>
-			<!-- end smart_nav * -->
+<div class="header-content home">
+		<div class="parallax-bg" id="slider-wrap">
+		<div class="slider parallax-bg" id="slider"> <div class="slider-sections sandbox"> 
+		<section class="first">
+			<img alt="Kendo UI" src="images/home-banner-1.png"/>
+			<div class="text">
+				<h2>SmartSite Ver 2.2<br />jjjj</h2> 
+				<p class="copy">jjj</p>
+				<p class="button">
+				<a>Download</a>
+				<a class="dimmed">Learn More</a>
+				</p>
+			</div> 
+		</section>
+		<section> <img src="images/dataviz-home-image-q2.png" alt="Kendo UI" /> <div class="text" style="padding-top: 10px;"> <h2>��ҵ��վ����ϵͳ</h2> <p class="copy">��ҳ�桢��ҳ���������š���Ʒչʾ�����ء��������ӡ������̳ǣ�����֧�������͡�֧����ʽ���?����ģ�顣</p> <p class="button"><a href="http://sc.chinaz.com/" onclick="_gaq.push(['_trackPageview', 'http://sc.chinaz.com/']);">Download</a> <a class="dimmed" onclick="_gaq.push(['_trackPageview', 'http://sc.chinaz.com/']);" href="http://sc.chinaz.com/">Learn More</a></p> </div> </section>
+		<section> <img src="images/home_banner_web-q2.png" alt="Kendo UI" /> <div class="text"> <h2>�����ƶ���վ����ϵͳ</h2> <p class="copy">����jquery.Mobile��HTML5������ܣ�ǰ��̨��ȫ���룬���ñ�ǩ��ģ�弼����ȫվ��ɴ���̬ҳ��</p> <p class="button"><a href="http://sc.chinaz.com/" onclick="_gaq.push(['_trackPageview', 'http://sc.chinaz.com/']);">Download</a> <a class="dimmed" onclick="_gaq.push(['_trackPageview', 'http://sc.chinaz.com/']);" href="http://sc.chinaz.com/">Learn More</a></p> </div> </section></div> </div> <a class="slider-prev" href="javascript: void(0)">?</a> <a class="slider-next" href="javascript: void(0)">?</a>
 		</div>
-		<div class="clear"></div>
-
-			</div>
-			</div>
-			<!---//End-header--->
-<!-- start main -->
-				<!---start-da-slider----->
-				<div id="da-slider" class="da-slider">
-				<div class="da-slide">
-					<p>CampusNow</p>
-					<h2>校园轻社交</h2>
-					<p class="a"><a href="#" target="_blank">因你而共鸣</a></p>
-				</div>
-				<div class="da-slide">
-					<p>Campus Now</p>
-					<h2>正在公测中</h2>
-					<p class="a"><a href="./download/CampusNow.apk">现在下载</a></p>
-				</div>
-				<div class="da-slide">
-					<p>Android 0.6</p>
-					<h2>百度助手上线啦</h2>
-					<p class="a"><a href="http://shouji.baidu.com/software/item?docid=6968802" target="_blank">点击下载</a></p>
-				</div>
-				<div class="da-slide">
-					<p>话题产生器</p>
-					<h2>Topic of CampusNow</h2>
-					<p class="a"><a href="http://t.campusnow.cn" target="_blank">点击进入</a></p>
-				</div>
-				<nav class="da-arrows">
-					<span class="da-arrows-prev"></span>
-					<span class="da-arrows-next"></span>
-				</nav>
-			</div>
- 			<!---//End-da-slider----->
- 		</div>
+	</div>
 
  		<div class="portfolio" id="portfolio">
 		  	<div class="wrap">
@@ -314,6 +255,8 @@
  <!-- scroll_top_btn -->
 		<script type="text/javascript" src="./js/move-top.js"></script>
 		<script type="text/javascript" src="./js/easing.js"></script>
+		<script type='text/javascript' src='js/common.js'></script>
+		<script type='text/javascript' src='js/slider.js'></script>
 		<script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
