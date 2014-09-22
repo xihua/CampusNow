@@ -1,26 +1,5 @@
 /********************
 ---| GLOBAL TAGS | ***/
-* {
-	margin: 0;
-	padding: 0;
-	outline: none;
-}
-
-html {
-	height: 100%; 
-}
-body {
-	/*font: 13px/18px 'lucida sans regular','lucida sans',arial,helvetica,sans-serif;*/
-	font: 13px/21px 'Lucida Sans Unicode', 'Lucida Grande', Arial, Helvetica, sans-serif;
-	color: #444; 
-	min-width: 940px;
-	height: 100%;
-	background:#fff;
-}
-img {
-	border: none;
-}
-
 /*******************
 ---| Header | ***/
 header {
